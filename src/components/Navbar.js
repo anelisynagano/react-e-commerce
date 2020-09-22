@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ totalPrice }) => {
     return (
         <nav>
             <ul>
@@ -10,7 +10,7 @@ const Navbar = () => {
                     <NavLink to='/cart'><li>Cart</li></NavLink>
                 </div>
                 <div className='navPrice'>
-                    <li>Total price: 0 Bottlecaps</li>
+                    <li>Total price: {totalPrice} Bottlecaps</li>
                 </div>
             </ul>
         </nav>
